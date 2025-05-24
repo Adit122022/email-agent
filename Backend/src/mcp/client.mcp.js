@@ -3,6 +3,7 @@ import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js"
 import { GoogleGenAI } from "@google/genai";
 import config from "../config/config.js"
 
+
 const ai = new GoogleGenAI({ apiKey: config.GOOGLE_GEMINI_KEY });
 
 
@@ -58,7 +59,8 @@ export const getResponse = async ({ input, messages }) => {
                     })
                 }
             ],
-            systemInstruction: `You are a helpful assistant. You can call tools to get information or perform actions. You can also ask the user for more information if needed.you are currently serving a user name ANNU😾 with userid:- 680887623a729b61cb8295ab,
+            systemInstruction: `You are a helpful assistant. You can call tools to get information or perform actions. You can also ask the user for more information if needed.you are currently serving a user name ANNU😾 with userid:- 682b1264b152a3354442f9b6
+,
             
 <important>
 
