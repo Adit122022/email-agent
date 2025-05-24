@@ -35,7 +35,7 @@ router.get('/google/callback', async (req, res) => {
             }
         );
 
-        const { access_token, refresh_token, id_token } = tokenResponse.data;
+        const { access_token, refresh_token } = tokenResponse.data;
 
         // Rest of your code remains the same
         const profileResponse = await axios.get('https://www.googleapis.com/oauth2/v2/userinfo', {
